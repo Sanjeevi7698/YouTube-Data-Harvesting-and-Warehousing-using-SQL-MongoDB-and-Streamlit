@@ -17,6 +17,11 @@ def Api_connect():
 
 youtube=Api_connect()
 
+#channels
+#UCetJvfhHNboF_Tl3auMOs5w
+#UC-cPWz8Fwk5vdWS-nwW4GSQ
+#UCT0rcqaWESref78w2B5sKcg
+
 #get channel inforamtion
 def get_channel_info(channel_id):
     request=youtube.channels().list(
