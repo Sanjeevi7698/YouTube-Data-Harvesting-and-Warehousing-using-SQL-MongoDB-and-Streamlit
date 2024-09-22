@@ -1,39 +1,98 @@
-# YouTube-Data-Harvesting-and-Warehousing-using-SQL-MongoDB-and-Streamlit
-Skills take away from this project: Python scripting, Data Collection, MongoDB, Streamlit, API integration, Data Management using MongoDB and SQL
 
-Streamlit- is an open-source Python library that allows you to create web applications for data science and machine learning projects with minimal effort. It simplifies the process of turning data scripts into shareable web applications by providing a high-level interface.
 
-Python- is a versatile and high-level programming language known for its readability, simplicity, and extensive community support.
+## Introduction
 
-A Google API Client- refers to the tools and libraries provided by Google to facilitate the integration of applications with various Google services and APIs.
-Purpose:
-Google API Clients are designed to simplify the process of interacting with Google services, such as Google Maps, YouTube, Google Drive, and others, by providing developers with pre-built libraries and tools.
-Its primary purpose in this project is to interact with YouTube's Data API v3, allowing the retrieval of essential information like channel details, video specifics, and comments.
+This project is a YouTube API scrapper that allows users to retrieve and analyze data from YouTube channels. It utilizes the YouTube Data API to fetch information such as channel statistics, video details, comments, and more. The scrapper provides various functionalities to extract and process YouTube data for further analysis and insights.
 
-MongoDB- is built on a scale-out architecture that has become popular with developers of all kinds for developing scalable applications with evolving data schemas. As a document database, MongoDB makes it easy for developers to store structured or unstructured data. It uses a JSON-like format to store documents.
+## Features
 
-POSTGRESQL: PostgreSQL is an open-source, advanced, and highly scalable database management system (DBMS) known for its reliability and extensive features. It provides a platform for storing and managing structured data, offering support for various data types and advanced SQL capabilities.
+The YouTube Data Scraper offers a range of features to help you extract and analyze data from YouTube. Some of the key features include:
 
-YouTube data scraping- involves extracting information from YouTube's publicly accessible content, such as video details, channel information, comments, and more. While web scraping itself is a common practice, its ethical implications depend on the intent, methods used, and adherence to terms of service.
-It can be ethical when conducted with transparency, respect for privacy, adherence to terms of service, and a clear understanding of the legal and ethical implications. Developers and researchers should prioritize responsible data practices to ensure a positive impact on the platform and its users.
+**Retrieve channel statistics:**
 
-REQUIRED LIBRARIES:
+Get detailed information about YouTube channels, including subscriber count, view count, video count, and other relevant metrics.
 
-1)googleapiclient.discovery
+**Fetch video details:**
 
-2)streamlit
+Extract data such as video title, description, duration, view count, like count, dislike count, and publish date for individual videos.
 
-3)psycopg2
+**Analyze comments:** 
 
-4)pymongo
+Retrieve comments made on YouTube videos and perform analysis, such as sentiment analysis or comment sentiment distribution.
 
-5)pandas
+**Generate reports:**
 
-FEATURES: The following functions are available in the YouTube Data Harvesting and Warehousing application: 
-Retrieval of channel and video data from YouTube using the YouTube API.
+Generate reports and visualizations based on the collected data, allowing users to gain insights into channel performance, video engagement, and audience interaction.
 
-Storage of data in a MongoDB database as a data lake.
+**Data storage:**
 
-Migration of data from the data lake to a SQL database for efficient querying and analysis.
+Store the collected YouTube data in a database for easy retrieval and future reference.
 
-Search and retrieval of data from the SQL database using different search options.
+# Technologies Used
+
+**Python:** 
+
+The project is implemented using the Python programming language.
+
+**YouTube Data API:** 
+
+Utilizes the official YouTube Data API to interact with YouTube's platform and retrieve data.
+
+**Streamlit:** 
+
+The user interface and visualization are created using the Streamlit framework, providing a seamless and interactive experience.
+
+**MongoDB:**
+
+The collected data can be stored in a MongoDB database for efficient data management and querying.
+
+**PostgreSQL:** 
+
+A powerful open-source relational database management system used to store and manage the retrieved data.
+
+**PyMongo:**
+
+A Python library that enables interaction with MongoDB, a NoSQL database. It is used for storing and retrieving data from MongoDB in the YouTube Data Scraper.
+
+**Psycopg2:** 
+
+A PostgreSQL adapter for Python that allows seamless integration between Python and PostgreSQL. It enables the YouTube Data Scraper to connect to and interact with the PostgreSQL database.
+
+**Pandas:**
+
+A powerful data manipulation and analysis library in Python. Pandas is used in the YouTube Data Scraper to handle and process data obtained from YouTube, providing functionalities such as data filtering, transformation, and aggregation.
+
+
+## Process Flow
+
+* Obtain YouTube API credentials.
+
+* Visit the Google Cloud Console.
+
+* Create a new project or select an existing project.
+
+* Enable the YouTube Data API v3 for your project.
+
+* Create API credentials for youtube API v3.
+
+## ETL Process
+
+* Extracting Data from youtube API.
+
+* Transforming data into required format.
+
+* Loading Data into SQL
+
+
+
+* Input the Channel Id and click on Get Channel Statistics in order to retrive data from Youtube API.
+
+* Next click on Push to MongoDB to store data in MongoDB Lake.
+
+* Select a channel name from the dropdown Channel Details and click on Push to SQL to import data into PostgreSQL.
+
+* Once imported, you can select the Analysis and Reports Page from the drop down to get a detailed analysis of the collected data.
+
+
+
+
